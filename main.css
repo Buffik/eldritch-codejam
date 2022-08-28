@@ -3,7 +3,7 @@
 }
 
 body {
-  background: url(./assets/home.png) 0 0/cover no-repeat fixed;
+  background: url(635012cb5c1e192ab1c6.png) 0 0/cover no-repeat fixed;
 }
 
 
@@ -151,7 +151,7 @@ body {
 }
 
 .deck {
-  background-image: url(./assets/mythicCardBackground.png);
+  background-image: url(6cfef7456fa52cb3c0c7.png);
   cursor: pointer;
 }
 
@@ -163,5 +163,6 @@ body {
 .hidden {
   display: none;
 }
+
 
 
