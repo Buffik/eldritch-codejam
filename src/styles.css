@@ -6,6 +6,8 @@ body {
   background: url(./assets/home.png) 0 0/cover no-repeat fixed;
 }
 
+
+
 .ancient-cards__template {
   margin: auto;
   padding-top: 20px;
@@ -156,6 +158,10 @@ body {
 .end-of-deck {
   background-image: none;
   cursor: default;
+}
+
+.hidden {
+  display: none;
 }
 
 

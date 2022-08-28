@@ -1,5 +1,6 @@
 let renderCurrentState = (elem, parent) => {
   parent.classList.add('deck-container')
+  parent.classList.add('hidden')
   document.body.appendChild(parent)
 
   elem.classList.add('current-state')
