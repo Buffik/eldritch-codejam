@@ -15,9 +15,9 @@ let renderCurrentState = (elem, parent) => {
         el1.innerHTML = `
         <span class="stage-text">Первая стадия</span>
         <div class="dots-container">
-          <div class="dot green">0</div>
-          <div class="dot brown">0</div>
-          <div class="dot blue">0</div>
+          <div id="first-stage-green" class="dot green">0</div>
+          <div id="first-stage-brown" class="dot brown">0</div>
+          <div id="first-stage-blue" class="dot blue">0</div>
         </div>
         `;
         
@@ -30,9 +30,9 @@ let renderCurrentState = (elem, parent) => {
           el2.innerHTML = `
           <span class="stage-text">Вторая стадия</span>
           <div class="dots-container">
-            <div class="dot green">0</div>
-            <div class="dot brown">0</div>
-            <div class="dot blue">0</div>
+            <div id="second-stage-green" class="dot green">0</div>
+            <div id="second-stage-brown" class="dot brown">0</div>
+            <div id="second-stage-blue" class="dot blue">0</div>
           </div>
           `;
           
@@ -45,9 +45,9 @@ let renderCurrentState = (elem, parent) => {
         el3.innerHTML = `
         <span class="stage-text">Третья стадия</span>
         <div class="dots-container">
-          <div class="dot green">0</div>
-          <div class="dot brown">0</div>
-          <div class="dot blue">0</div>
+          <div id="third-stage-green" class="dot green">0</div>
+          <div id="third-stage-brown" class="dot brown">0</div>
+          <div id="third-stage-blue" class="dot blue">0</div>
         </div>
         `;
         elem.appendChild(el3)
