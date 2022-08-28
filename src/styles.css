@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./assets/home.png) 0 0/cover no-repeat fixed;
+}
+
+.ancient-cards__template {
+  margin: auto;
+  padding-top: 20px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sibling-fade { visibility: hidden; }
+
+.sibling-fade > * { visibility: visible; }
+
+.sibling-fade > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
+
+.sibling-fade:hover > * { opacity: 0.4; transform: scale(0.9); }
+
+.sibling-fade > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+
+
+.ancient-card {
+  width: 250px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.clicked_item {
+  box-shadow:0 0 75px rgb(252, 1, 1);
+}
+
+
+.difficulty__template {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: auto;
+  padding-top: 20px;
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.difficulty {
+  cursor: pointer;
+}
+
+.clicked_difficulty {
+  color: rgb(224, 19, 19);
+}
+
+
+.sibling-fade-difficulties { visibility: hidden; }
+
+.sibling-fade-difficulties > * { visibility: visible; }
+
+.sibling-fade-difficulties > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
+
+.sibling-fade-difficulties:hover > * { opacity: 0.4; transform: scale(0.9); }
+
+.sibling-fade-difficulties > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+
+
+.start-button {
+  display: block;
+  margin: 30px auto;
+  font-size: 30px;
+  text-transform: uppercase;
+  background-color: brown;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: red;
+  transition: 0.3s;
+}
+
+.deck-container {
+  align-items: center;
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+
+
+.current-state {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 30%;
+}
+
+.stage-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stage-text {
+  color: rgb(248, 21, 248);
+}
+
+.done {
+  color: rgb(248, 21, 70);
+}
+
+.dots-container {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dot {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}
+
+.green {
+  background-color: green;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.last-card, .deck {
+  background-size: cover;
+  height: 190px;
+  width: 130px;
+}
+
+.deck {
+  background-image: url(./assets/mythicCardBackground.png);
+  cursor: pointer;
+}
+
+.end-of-deck {
+  background-image: none;
+  cursor: default;
+}
+
+
